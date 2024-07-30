@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bandera de Guatemala</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .encabezado, .cuerpo, .pie, .lenguajes, .datos, .redes, .lista {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .encabezado {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background: linear-gradient(to right, #009BDB 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #009BDB 66.66%);
+        }
+        .nombre {
+            color: black;
+            font-size: 2em;
+        }
+        .enlaces {
+            margin-top: 10px;
+        }
+        .enlaces a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+        .enlaces a:hover {
+            text-decoration: underline;
+        }
+        .imagen {
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+        .red {
+            max-height: 40px;
+            margin-bottom: 40px;
+        }
+        .fle{
+            max-height: 10px;
+            margin-bottom: 10px;
+        }
+        .lenguajes {
+            text-align: left;
+        }
+        .lenguajes h2 {
+            text-align: center;
+        }
+        .lenguajes ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .lenguajes li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .lenguajes li img {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        .tabla {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .tabla th, .tabla td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .tabla th {
+            background-color: #f4f4f4;
+        }
+        .cuerpo, .datos {
+            background-color: #f4f4f4;
+        }
+        .pie {
+            background-color: #009BDB;
+            color: black;
+            text-align: center;
+        }
+        .boton-enviar {
+            background-color: #20b2aa;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 50%;
+            max-width: 1200px;
+        }
+        .datos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .datos input, .datos textarea {
+            width: 50%;
+            max-width: 1200px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .datos textarea {
+            height: 100px;
+        }
+        .redes {
+            text-align: center;
+        }
+        .redes p {
+            color: #0000FF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="encabezado">
+        <img src="C:\Users\marco\Desktop\tarea 0\user_circle_icon_152504.webp" alt="Imagen" class="imagen">
+        <div class="nombre">Marco Contreras</div>
+        <div class="enlaces">
+            <a href="#">Inicio</a> |
+            <a href="#">Php</a> |
+            <a href="#">.Net</a> |
+            <a href="#">Java</a>
+        </div>
+    </div>
+    <!-- Lenguajes de programación en lista -->
+    <div class="lista">
+        <h2>Lenguajes de programación</h2>
+        <p>1. Páginas Web</p>
+        <ul>
+            <li><img src="C:\Users\marco\Desktop\tarea 0\flecha.png" alt="Icono" class="fle"> Jsp</li>
+            <li><img src="C:\Users\marco\Desktop\tarea 0\flecha.png" alt="Icono" class="fle"> Aspx</li>
+            <li><img src="C:\Users\marco\Desktop\tarea 0\flecha.png" alt="Icono" class="fle"> Php</li>
+        </ul>
+        <p>2. Aplicaciones</p>
+        <ul>
+            <li><img src="C:\Users\marco\Desktop\tarea 0\ne.png" alt="Icono" class="fle"> Java</li>
+            <li><img src="C:\Users\marco\Desktop\tarea 0\ne.png" alt="Icono" class="fle"> Visual Basic</li>
+            <li><img src="C:\Users\marco\Desktop\tarea 0\ne.png" alt="Icono" class="fle"> C#</li>
+        </ul>
+
+    </div>
+
+    <!-- Lenguajes -->
+    <div class="lenguajes">
+        <table class="tabla">
+            <tr>
+                <th colspan="2">Programacion Web</th>
+            </tr>
+            <tr>
+                <td>Asp</td>
+                <td>Jsp</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>Ruby</td>
+            </tr>
+            <tr>
+                <td>Phyton</td>
+                <td>Go</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Datos -->
+    <div class="datos">
+        <input type="text" placeholder="Ingrese Nombres">
+        <input type="text" placeholder="Ingrese Apellidos">
+        <input type="text" placeholder="Ingrese numero Telefonico">
+        <input type="text" placeholder="Fecha de Nacimiento (dd/mm/aaaa)">
+        <textarea placeholder="Ingrese el Mensaje"></textarea>
+        <button class="boton-enviar">Enviar</button>
+    </div>
+
+    <!-- Redes Sociales -->
+    <div class="redes">
+        <p>Redes Sociales</p>
+        <img src="C:\Users\marco\Desktop\tarea 0\face.png" alt="Imagen" class="red">
+        <img src="C:\Users\marco\Desktop\tarea 0\twit.png" alt="Imagen" class="red">
+    </div>
+
+    <!-- Pie de página -->
+    <div class="pie">
+        <p><b>Aprende a Programar Fácil y Rápido ©</b></p>
+    </div>
+</body>
+</html>
